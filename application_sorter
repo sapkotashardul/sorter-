@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: Shardul
+"""
+
+#This program was used to read the applicants file who applied for director/deputy director positions in the student council
+import os
+os.getcwd #find working directory
+os.chdir() #change to desired directory 
+file = open('file.txt','r') # read the desired file 
+read = file.readlines() #read the lines in the file
+lower = [x.lower() for x in read] #convert each string to lower case
+split1= "".join(lower) #converting the list to a string 
+words=split1.split() #splitting words into a list
+important = set(["director", "deputy"])#key search terms
+hits=[important.intersection(set(words))] #finding the key terms in the file
+if len(hits) > 0:
+    print "Here, this is important! Found: %s" % (hits)
+
+
+
+
+
+
+

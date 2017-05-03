@@ -17,22 +17,19 @@ a{
 	a:hover,
 	a:active{ text-decoration: underline; }
 
-/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+/* structuring the codes's white space so that it is as readable for*/
 
 body{
     font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
 }
-/* you can put your code all in one line like above */
 #page{ margin: 20px; }
 
-/* or on different lines like below */
 #logo{
 	width: 35%;
 	margin-top: 5px;
 	font-family: georgia;
 	display: inline-block;
 }
-/* but try and be as concise as possible */
 #nav{
 	width: 60%;
 	display: inline-block;
